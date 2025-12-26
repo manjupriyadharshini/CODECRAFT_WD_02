@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpookyMart | Halloween Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Spooky</div>
+
+      <ul class="nav-links">
+        <li data-target="home">Home</li>
+        <li data-target="decor">Decor</li>
+        <li data-target="treats">Trick or Treat</li>
+        <li data-target="costumes">Costumes</li>
+        <li class="support-btn">Support</li>
+      </ul>
+
+      <div class="nav-actions">
+        <span class="login">Login</span>
+        <span class="cart">Cart (0)</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="tagline">#1 TOP SCARIEST STORE</p>
+      <h1>RESPAWN<br>THE SPOOKY<br>SHOP</h1>
+      <p class="desc">
+        Discover spooky decorations, costumes and treats to make your
+        Halloween night unforgettable.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn">Shop Now</button>
+        <button class="secondary-btn">Explore</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+  <div class="spooky-emoji">👻</div>
+</div>
+
+
+  </section>
+  <!-- FAVORITE SCARE CATEGORY -->
+<section id="category" class="category-section">
+  <h2 class="section-title">Favorite Scare Category</h2>
+  <p class="section-subtitle">
+    Choose your scare style and explore the spooky collections crafted just for Halloween.
+  </p>
+
+  <div class="category-grid">
+
+  <!-- DECOR -->
+  <div class="category-card">
+    <div class="category-emoji">🎃</div>
+    <h3>Haunted Decor</h3>
+    <p>
+      Turn your home into a cursed mansion with glowing pumpkins,
+      dark lanterns and spine-chilling Halloween decorations.
+    </p>
+  </div>
+
+  <!-- CANDIES -->
+  <div class="category-card">
+    <div class="category-emoji">🍬</div>
+    <h3>Cursed Candies</h3>
+    <p>
+      Sweet treats with a spooky twist — candies, chocolates and
+      goodies crafted for trick-or-treat nights.
+    </p>
+  </div>
+
+  <!-- COSTUMES -->
+  <div class="category-card">
+    <div class="category-emoji">👻</div>
+    <h3>Scary Costumes</h3>
+    <p>
+      Dress to terrify with ghostly outfits, witch costumes and
+      haunting looks made for Halloween night.
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT HALLOWEEN -->
+<section id="about" class="about-section">
+  <div class="about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-text">
+      <h2>About Halloween Night</h2>
+      <p class="about-desc">
+        When the moon rises and shadows grow longer, Halloween night awakens.
+        A time when haunted decor glows, candies tempt the brave, and costumes
+        bring hidden fears to life.
+      </p>
+      <p class="about-desc">
+        At Spooky, we craft every detail to help you celebrate the darkness
+        with style, mystery and a little bit of magic.
+      </p>
+
+      <button class="primary-btn">Explore Collection</button>
+    </div>
+
+    <!-- RIGHT VISUAL -->
+    <div class="about-visual">
+      <div class="about-emoji">🕯️</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRICK OR TREAT PRODUCTS -->
+<section id="treats" class="products-section">
+  <h2 class="section-title">Trick or Treat</h2>
+  <p class="section-subtitle">
+    Sweet, spooky and scary goodies waiting for brave trick-or-treaters.
+  </p>
+
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="product-emoji">🍭</div>
+      <h4>Haunted Lollipop</h4>
+      <p class="product-desc">Colorful candy with a spooky twist.</p>
+      <div class="product-footer">
+        <span class="price">₹199</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">🍬</div>
+      <h4>Cursed Candy Mix</h4>
+      <p class="product-desc">Perfect treat for dark Halloween nights.</p>
+      <div class="product-footer">
+        <span class="price">₹299</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">🍫</div>
+      <h4>Witch Chocolate</h4>
+      <p class="product-desc">Rich chocolate enchanted with mystery.</p>
+      <div class="product-footer">
+        <span class="price">₹349</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">🧁</div>
+      <h4>Spooky Cupcake</h4>
+      <p class="product-desc">Sweet cupcake baked for haunted cravings.</p>
+      <div class="product-footer">
+        <span class="price">₹249</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COSTUMES -->
+<section id="costumes" class="costumes-section">
+  <h2 class="section-title">Costumes</h2>
+  <p class="section-subtitle">
+    Dress to terrify. Iconic Halloween costumes crafted for a haunting night.
+  </p>
+
+  <div class="costumes-grid">
+
+    <div class="costume-card">
+      <div class="costume-emoji">👻</div>
+      <h4>Ghost Apparition</h4>
+      <p class="costume-desc">Classic ghostly look with a chilling presence.</p>
+      <div class="costume-footer">
+        <span class="price">₹1299</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+    <div class="costume-card">
+      <div class="costume-emoji">🧛‍♂️</div>
+      <h4>Vampire Lord</h4>
+      <p class="costume-desc">Elegant, dark and dangerously charming.</p>
+      <div class="costume-footer">
+        <span class="price">₹1899</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+    <div class="costume-card">
+      <div class="costume-emoji">🧙‍♀️</div>
+      <h4>Witch Enchantress</h4>
+      <p class="costume-desc">Mystic magic woven into every detail.</p>
+      <div class="costume-footer">
+        <span class="price">₹1599</span>
+        <button onclick="addToCart()">Add</button>
+      </div>
+    </div>
+
+    <div class="costume-card">
+      <div class="costume-emoji">🧟‍♂️</div>
+      <h4>Zombie Walker</h4>
+      <p class="costume-desc">Undead vibes for a truly terrifying walk.</p>
+      <div class="costume-footer">
+        <span class="price">₹1799</span>
+        <button onclick="addToCart(this)">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DECOR SECTION -->
+<section id="decor" class="products-section">
+  <h2 class="section-title">Haunted Decor</h2>
+  <p class="section-subtitle">
+    Transform your space into a cursed mansion with eerie Halloween decorations.
+  </p>
+
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="product-emoji">🎃</div>
+      <h4>Glowing Pumpkin</h4>
+      <p class="product-desc">Classic jack-o-lantern with an eerie glow.</p>
+      <div class="product-footer">
+        <span class="price">₹699</span>
+        <button onclick="addToCart(this)">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">🕯️</div>
+      <h4>Haunted Candles</h4>
+      <p class="product-desc">Dark candles to light up spooky nights.</p>
+      <div class="product-footer">
+        <span class="price">₹499</span>
+        <button onclick="addToCart(this)">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">🦇</div>
+      <h4>Bat Wall Decor</h4>
+      <p class="product-desc">Flying bats to haunt your walls.</p>
+      <div class="product-footer">
+        <span class="price">₹399</span>
+        <button onclick="addToCart(this)">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">💀</div>
+      <h4>Skull Table Piece</h4>
+      <p class="product-desc">A cursed skull centerpiece for dark vibes.</p>
+      <div class="product-footer">
+        <span class="price">₹899</span>
+        <button onclick="addToCart(this)">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-emoji">🕸️</div>
+      <h4>Spider Web Set</h4>
+      <p class="product-desc">Fake webs to trap the fear everywhere.</p>
+      <div class="product-footer">
+        <span class="price">₹299</span>
+        <button onclick="addToCart(this)">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OFFER SECTION -->
+<section class="offer-section">
+  <div class="offer-box">
+    <div class="offer-emoji">🎁</div>
+    <h2>50% OFF On Spooky Decor</h2>
+    <p>
+      Limited time Halloween offer. Grab your haunted essentials
+      before the night ends.
+    </p>
+    <button class="primary-btn">Shop Offers</button>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <h2 class="section-title">Join The Dark Side</h2>
+  <p class="section-subtitle">
+    Subscribe for spooky deals, new arrivals and Halloween surprises.
+  </p>
+
+  <div class="newsletter-box">
+    <input type="email" placeholder="Enter your email" />
+    <button class="primary-btn">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h3 class="footer-logo">Spooky</h3>
+      <p>
+        Your one-stop Halloween store for spooky decor, cursed candies
+        and terrifying costumes.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li onclick="scrollToSection('home')">Home</li>
+        <li onclick="scrollToSection('decor')">Decor</li>
+        <li onclick="scrollToSection('treats')">Trick or Treat</li>
+        <li onclick="scrollToSection('costumes')">Costumes</li>
+      </ul>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li>🎃 Haunted Decor</li>
+        <li>🍬 Cursed Candies</li>
+        <li>👻 Scary Costumes</li>
+        <li>🕯️ Accessories</li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <span>📘</span>
+        <span>📸</span>
+        <span>🐦</span>
+        <span>▶️</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Spooky. All Rights Reserved.
+  </div>
+</footer>
+
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTopBtn">⬆️</button>
+
+
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
